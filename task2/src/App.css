@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Quicksand',sans-serif;
+}
+
+body{
+  background:linear-gradient(
+    135deg,
+    #ffe4ec,
+    #ffd6e7,
+    #fff0f5
+  );
+}
+
+.app{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.todo-container{
+  width:100%;
+  max-width:700px;
+}
+
+.header{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.header h1{
+  color:#d96c94;
+  font-size:3rem;
+}
+
+.header p{
+  color:#8b6b77;
+  margin-top:8px;
+}
+
+.todo-card{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(8px);
+  padding:30px;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(255,182,193,0.4);
+  border:3px solid #ffd1dc;
+}
+
+.todo-card h2{
+  text-align:center;
+  color:#d96c94;
+  margin-bottom:20px;
+}
+
+.input-section{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.input-section input{
+  flex:1;
+  padding:14px;
+  border:none;
+  border-radius:15px;
+  background:#fff6f9;
+  font-size:16px;
+  outline:none;
+}
+
+.input-section button{
+  background:#ff9ec4;
+  color:white;
+  border:none;
+  padding:14px 20px;
+  border-radius:15px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.input-section button:hover{
+  transform:translateY(-2px);
+  background:#ff82b2;
+}
+
+.counter{
+  text-align:center;
+  color:#c45d88;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.task-list{
+  list-style:none;
+}
+
+.task-list li{
+  background:#fff7fa;
+  margin-bottom:12px;
+  padding:14px 16px;
+  border-radius:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:2px solid #ffd6e4;
+}
+
+.delete-btn{
+  background:#ff7fa5;
+  color:white;
+  border:none;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.delete-btn:hover{
+  background:#ff5f8d;
+}
+
+footer{
+  text-align:center;
+  margin-top:20px;
+  color:#b16b88;
+  font-weight:600;
+}
+
+@media(max-width:600px){
+
+  .header h1{
+    font-size:2rem;
+  }
+
+  .input-section{
+    flex-direction:column;
+  }
+
+  .input-section button{
+    width:100%;
+  }
+}
